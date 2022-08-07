@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@100;300&family=Ubuntu&display=swap');
+	/*@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@100;300&display=swap');*/
+	*{
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		outline: none;
+		text-decoration: none;
+		list-style: none;
+		font-family: 'Heebo', sans-serif;
+		scroll-behavior: smooth;
+	}
+	body{
+		width: 100%;
+		display: grid;
+		overflow-x: hidden;
+	}
+	/*------------------------------------------------*/
+	header{
+		width: 100%;
+		height: 70px;
+		background: #3b464c;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.nav-bar{
+		height: 90%;
+		width: 90%;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.nav-items{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		grid-gap: 50px;
+	}
+	.nav-items li {
+		color: white;
+		font-weight: 1000;
+		transition: 0.4s all;
+	}
+	.nav-items li:hover{
+		color: #f39f39;
+	}
+	.logo{
+		color: white;
+		font-size: 20px;
+		padding: 10px;
+		border-radius: 20px;
+		background: #f39f39;
+	}
+	.nav-bar .fa-bars{
+		font-size: 30px;
+		color: white;
+		display: none;
+		position: absolute;
+		cursor: pointer;
+	}
+	.nav-bar .fa-xmark{
+		font-size: 30px;
+		position: absolute;
+		color: white;
+		display: none;
+		cursor: pointer;
+
+	}
+	/*===============================*/
+		/*-------------------------------------------*/
+	.z-div{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		background: black;
+		padding: 10px;
+	}
+	.z-div-a{
+		height: 300px;
+		width: 100%;
+		background: black;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: row;
+		font-family: 'Ubuntu', sans-serif;
+		/*background: #3b464c;*/
+		grid-gap: 200px;
+	}
+	.z-box{
+		display: flex;
+		flex-direction: column;
+		grid-gap: 10px;
+	}
+	.z-box li{
+		color: dimgray;
+		transition: 0.4s all;
+	}
+	.z-box li:hover{
+		color: orange;
+	}
+	.z-social-box{
+		display: flex;
+		flex-direction: column;
+		grid-gap: 20px;
+	}
+	.social-icons{
+		display: flex;
+		flex-direction: row;
+		grid-gap: 10px;
+	}
+	.social-icons i{
+		font-size: 30px;
+		transition: 0.5s all;	
+		color: white;
+	}
+	.social-icons i:hover{
+		transform: rotate(360deg);
+		color: orange;
+	}
+	.copyright{
+		color: white;
+	}
+	/*===========================================*/
+	.contact{
+		height: 300px;
+		width: 100%;
+		background: #3b464c;
+		text-align-last: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		color: white;
+		grid-gap: 30px;
+	}
+.con-text{
+	font-size: 50px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.con-ro-text{
+	font-size: 15px;
+}
+/*========================*/
+.g-i-t{
+	height: 800px;
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	grid-gap: 100px;
+}
+.git-div1{
+	height: 650px;
+	width: 600px;
+	display: flex;
+	grid-gap: 20px;
+	flex-direction: column;
+}
+.git-h1{
+	font-size: 50px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.git-p{
+	font-size: 17px;
+	color: gray;
+}
+input{
+	height: 50px;
+	width: 100%;
+	border-radius: 10px;
+	padding: 20px;
+	border: 1px solid orange;
+	font-size: 15px;
+}
+.sendmsg{
+	height: 60px;
+	padding: 10px;
+	background: orange;
+	cursor: pointer;
+	color: white;
+}
+#t-area{
+	height: 150px;
+	resize: none;
+	display: block;
+	border-radius: 10px;
+	border: none;
+	border: 1px solid orange;
+	padding: 10px;
+	font-size: 15px;
+}
+.git-div2{
+	height: 600px;
+	width: 600px;
+	/*background: orange;*/
+	background-image: url(mobilemsg.svg);
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*==========================*/
+.address{
+	height: 200px;
+	width: 100%;
+	background: #3b464c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 30%;
+	grid-gap: 100px;
+}
+.add-div{
+	height: 200px;
+	width: 350px;
+	border-radius: 20px;
+	background: #062233;
+	display: flex;
+	flex-direction: column;
+	grid-gap: 10px;
+	color: white;
+	padding: 25px;
+	margin-top: -150px;
+}
+.add-img{
+	height: 70px;
+	width: 80px;
+	border-radius: 10px;
+	background: #73a241;
+	font-size: 30px;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	margin-top: -50px;
+}
+.fa-phone{
+	font-size: 30px;
+	color: white;
+}
+/*==============================================*/
+	@media only screen and (max-width: 500px){
+
+		body{
+		overflow-x: hidden;
+		}
+		header{
+		width: 100%;
+		height: 200px;
+		background: #3b464c;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.nav-bar{
+		height: 5000px;
+		width: 90%;
+		position: fixed;
+		right: 0;
+		display: flex;
+		align-items: center;
+		z-index: 10;
+	}
+	.nav-items{
+		background: whitesmoke;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-items: center;
+		grid-gap: 100px;
+		flex-direction: column;
+		font-weight: 100;
+		padding-top: 2000px;
+		right: -100%;
+		transition: 0.5s all;
+	}
+	.nav-bar .fa-xmark{
+		font-size: 100px;
+		display: none;
+		right: 10%;
+		color: black;
+	}
+	.nav-bar .fa-bars{
+		display: block;
+		font-size: 100px;
+		color: white;
+		/*position: absolute;*/
+		right: 10%;
+	}
+
+	.nav-items li {
+		height: 150px;
+		width: 700px;
+		text-align: center;
+		font-size: 50px;
+		font-weight: 1000;
+		transition: 0.4s all;
+		background: #f39f39;
+		padding: 40px;
+		color: white;
+		border-radius: 20px;
+	}
+	.nav-items li:hover{
+		color: black;
+	}
+	.logo{
+		color: white;
+		font-size: 40px;
+		padding: 30px;
+		position: absolute;
+		border-radius: 50px;
+		background: #f39f39;
+		left: -5%;
+	}
+	/*======================================*/
+	.contact{
+		height: 800px;
+		width: 100%;
+		background: #3b464c;
+		text-align-last: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		color: white;
+	}
+	.con-text{
+		font-size: 100px;
+		font-family: 'Ubuntu', sans-serif;
+	}
+	.con-ro-text{
+		text-align: center;
+		font-size: 30px;
+		padding: 50px;
+	}
+	/*=================================*/
+	.g-i-t{
+	height: 2500px;
+	width: 100%;
+	padding: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column-reverse;
+	grid-gap: 100px;
+}
+.git-div1{
+	height: 1300px;
+	width: 90%;
+	display: flex;
+	grid-gap: 50px;
+	flex-direction: column;
+	text-align: center;
+}
+.git-h1{
+	font-size: 100px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.git-p{
+	font-size: 30px;
+	color: gray;
+}
+input{
+	height: 100px;
+	width: 100%;
+	border-radius: 20px;
+	padding: 20px;
+	border: 3px solid orange;
+	font-size: 40px;
+}
+.sendmsg{
+	height: 150px;
+	padding: 10px;
+	background: orange;
+	cursor: pointer;
+	color: white;
+}
+#t-area{
+	height: 300px;
+	resize: none;
+	display: block;
+	border-radius: 10px;
+	border: none;
+	border: 3px solid orange;
+	padding: 10px;
+	font-size: 50px;
+}
+.git-div2{
+	height: 700px;
+	width: 700px;
+	/*background: orange;*/
+	background-image: url(mobilemsg.svg);
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*=================================*/
+.address{
+	height: 2100px;
+	width: 100%;
+	background: #3b464c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-top-left-radius: 0%;
+	border-top-right-radius: 0%;
+	grid-gap: 300px;
+}
+.add-div{
+	height: 450px;
+	width: 70%;
+	border-radius: 20px;
+	background: #062233;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	grid-gap: 50px;
+	color: white;
+	padding: 25px;
+	/*margin-top: -150px;*/
+
+}
+.add-img{
+	height: 150px;
+	width: 150px;
+	border-radius: 10px;
+	background: #73a241;
+	font-size: 40px;
+	color: white;
+	padding: 50px;
+	text-align: center;
+	margin-top: -100px;
+}
+.add-text{
+	font-size: 40px;
+}
+.add-ro-text{
+	font-size: 30px;
+	color: white;
+}
+.fa-phone{
+	font-size: 50px;
+	color: white;
+}
+/*==================================*/
+.z-div{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		background: black;
+		padding-top: 100px;
+	}
+	.z-div-a{
+		height: 2000px;
+		width: 100%;
+		background: black;
+		color: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		font-size: 50px;
+		font-family: 'Ubuntu', sans-serif;
+		/*background: #3b464c;*/
+		text-align: center;
+		grid-gap: 150px;
+	}
+	.z-box{
+		display: flex;
+		flex-direction: column;
+		grid-gap: 10px;
+	}
+	.z-box li{
+		color: dimgray;
+		transition: 0.4s all;
+	}
+	.z-box li:hover{
+		color: orange;
+	}
+	.z-social-box{
+		display: flex;
+		flex-direction: column;
+		grid-gap: 100px;
+	}
+	.social-icons{
+		display: flex;
+		flex-direction: row;
+		grid-gap: 100px;
+	}
+	.social-icons i{
+		font-size: 100px;
+		transition: 0.5s all;	
+		color: white;
+	}
+	.social-icons i:hover{
+		transform: rotate(360deg);
+		color: orange;
+	}
+	.copyright{
+		color: white;
+		letter-spacing: 2px;
+		padding: 40px;
+		font-size: 30px;
+	}
+	.logo2{
+		color: white;
+		font-size: 60px;
+		padding: 50px;
+		border-radius: 50px;
+		background: #f39f39;
+	}
+}

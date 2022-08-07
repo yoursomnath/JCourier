@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="contact.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Contact</title>
+</head>
+<body>
+	<header>
+		<div class="nav-bar" id="nbar">
+			<i class="fa-solid fa-bars" id="bars"></i>
+			<div class="logo">Jotyicourier</div>
+			<ul class="nav-items">
+				<a href="index.html"><li>Home</li></a>
+				<a href="#"><li>Services</li></a>
+				<a href="#"><li>Team</li></a>
+				<a href="#"><li>Pricing</li></a>
+				<a href="#"><li>About</li></a>
+				<a href="contact.html"><li>Contact Us</li></a>
+			</ul>
+			<i class="fa-solid fa-xmark"></i>
+		</div>
+	</header>
+	<!-- ============================================ -->
+	<div class="contact">
+		<h1 class="con-text">Contact Us</h1>
+		<p class="con-ro-text">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Excepturi, sequi a sit. Nemo quas, quibusdam.</p>
+	</div>
+	<div class="g-i-t">
+		<form class="git-div1">
+			<h1 class="git-h1">Get In Touch</h1>
+			<p class="git-p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus assumenda quisquam porro deserunt animi minus tenetur accusantium sit magni sed.</p>
+			<input type="text" placeholder="Name" required>
+			<input type="email" placeholder="Email" required>
+			<textarea name="Comment" id="t-area" cols="30" rows="10" placeholder="Comment"></textarea>
+			<input type="submit" value="Send Now" class="sendmsg">
+		</form>
+		<div class="git-div2"></div>
+	</div>
+	<!-- ============================================ -->
+	<div class="address">
+		<div class="add-div">
+			<div class="add-img"><i class="fa-solid fa-phone"></i></div>
+			<h1 class="add-text">Our Phone</h1>
+			<p class="add-ro-text">+91 6295340985</p>
+		</div>
+		<div class="add-div">
+			<div class="add-img"><i class="fa-solid fa-envelope"></i></div>
+			<h1 class="add-text">Our Mail</h1>
+			<p class="add-ro-text">amijaninai@gmail.com</p>
+		</div>
+		<div class="add-div">
+			<div class="add-img"><i class="fa-solid fa-location-dot"></i></div>
+			<h1 class="add-text">Our Address</h1>
+			<p class="add-ro-text">Deshbondhu road,Purulia</p>
+		</div>
+	</div>
+	<!-- ============================================ -->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.5529210384788!2d86.36665139146238!3d23.342908716223903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f687605f9ed27f%3A0xdf4fe1a334073174!2sDTDC%20Courier%20Services%20Purulia!5e0!3m2!1sen!2sin!4v1659882264996!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<!-- ============================================ -->
+	<div class="z-div">
+		<div class="logo2">Jyoti Courier</div>
+		<div class="z-div-a">
+		<div class="z-box">
+			<h2 class="z-text">Company</h2>
+			<a href="#"><li>About</li></a>
+			<a href="#"><li>Product</li></a>
+			<a href="#"><li>Blog</li></a>
+		</div>
+		<div class="z-box">
+			<h2 class="z-text">Join Us</h2>
+			<a href="#"><li>Driver Partner</li></a>
+			<a href="#"><li>Merchant</li></a>
+		</div>
+		<div class="z-box">
+			<h2 class="z-text">Further Information</h2>
+			<a href="#"><li>Terms & Condition</li></a>
+			<a href="#"><li>Privacy Policy</li></a>
+		</div>
+		<div class="z-social-box">
+			<h2 class="z-text">Find Us</h2>
+			<div class="social-icons">
+			<a href="#"><i class="fa-brands fa-facebook"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-twitter"></i></a>
+			<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+		</div>
+	</div>
+		<div class="copyright">Copyright © 2022 Joyti Courier | Powered by Pritam</div>
+	</div>
+
+	<script>
+		const menu = document.querySelector('.nav-items');
+		const closeMenu = document.querySelector('.fa-xmark');
+		const openMenu = document.querySelector('.fa-bars');
+
+
+
+		openMenu.addEventListener('click',show);
+		closeMenu.addEventListener('click',close);
+		// llt.addEventListener('click',gotop)
+
+		function show(){
+			menu.style.display = 'flex';
+			menu.style.right = '0';
+			closeMenu.style.display = 'block';
+		}
+		function close(){
+			menu.style.right = '-100%';
+			closeMenu.style.display = 'none'
+		}
+		function scrollValue() {
+    	var navbar = document.getElementById('nbar');
+    	var scroll = window.scrollY;
+    	if (scroll < 200) {
+        navbar.style.display = 'flex';
+   		} else {
+        navbar.style.display = 'none';	
+    	}
+	}
+
+	window.addEventListener('scroll', scrollValue);
+	</script>
+</body>
+</html>
